@@ -8,19 +8,19 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/book 1', function (req,res){
+app.get('/book-one', function (req,res){
      res.send('Book 1 requested and will be served here');
 });
 
-app.get('/book 2', function (req,res){
+app.get('/book-two', function (req,res){
      res.send('Book 2 requested and will be served here');
 });
 
-app.get('/book 3', function (req,res){
+app.get('/book-three', function (req,res){
      res.send('Book 3 requested and will be served here');
 });
 
-app.get('/book 4', function (req,res){
+app.get('/book-four', function (req,res){
      res.send('Book 4 requested and will be served here');
 });
 app.get('/ui/style.css', function (req, res) {
