@@ -13,7 +13,7 @@ app.get('/book-one', function (req,res){
 });
 
 app.get('/book-two', function (req,res){
-     res.send('Book 2 requested and will be served here');
+     res.sendFile(path.join(__dirname, 'ui', 'book-two.html'));
 });
 
 app.get('/book-three', function (req,res){
